@@ -5,16 +5,15 @@ function compress(str) {
   validateIfArgHasNumbers(str)
 
   let compressed = ""
-  let count = 1
 
-  for (let i = 0; i <= str.length; i++, count++)  {
-    const currChar = str[i]
-    const nextChar = str[i + 1]
+  for (let i = 0; i < str.length;)  {
+    const char = str[i]
+    let count = 1
 
-    if (nextChar !== currChar) {
-      compressed += count + currChar
-      count = 0
-    }
+    while (char === str[++i])
+      count++
+
+    compressed += count + char
   }
 
   return compressed
