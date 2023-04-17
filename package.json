@@ -1,0 +1,13 @@
+{
+  "name": "neopro-challenge-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gabriel Alves de Lisboa",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
